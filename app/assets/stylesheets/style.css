@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+
+body {
+  margin: 20px 20px auto 20px;
+  font-family: Titillium Web;
+}
+
+.letters {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0 0 2px 0;
+}
+
+#letter {
+  border: solid 1px rgb(201, 204, 209);
+  background-color: rgb(67, 147, 201);
+  border-radius: 2px;
+  text-align: center;
+  width: 30px;
+  color: white;
+  font-size: larger;
+  font-weight: 900;
+}
+
+h1 {
+  font-weight: 900;
+}
+
+#entry_form {
+  margin: 0;
+}

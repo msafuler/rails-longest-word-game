@@ -1,0 +1,14 @@
+<h1>Result</h1>
+
+<% if @character_match == false %>
+  <p>Sorry but <strong><%= params[:user_answer].upcase %></strong> can't be built out of <%= params[:letters_choice].upcase %></p>
+
+<% elsif @is_english_word == false %>
+  <p>Sorry but <strong><%= params[:user_answer].upcase %></strong> does not seem to be a valid English word...</p>
+<% end %>
+
+<% if @is_english_word && @character_match %>
+  <p><strong>Congratulations! </strong><%= params[:user_answer].upcase %> is a valid English word!</p>
+<% end %>
+
+<strong><%= link_to "Play again", new_path %></strong>
